@@ -67,9 +67,9 @@ if __name__ == "__main__":
 
    s = BME280.sensor(pi, interface=BME280.SPI)
 
-   stop = time.time() + 60
+   logger.info("Starting local sensor")
 
-   while stop > time.time():
+   while True:
       t, p, h = s.read_data(BME280.FARENHEIT, BME280.INHG)
       #print("h={:.2f} p={:.1f} t={:.2f}".format(h, p/100.0, t))
 
@@ -89,4 +89,4 @@ if __name__ == "__main__":
 
    pi.stop()
 
-
+   logger.info ("Local sensor stopped")
