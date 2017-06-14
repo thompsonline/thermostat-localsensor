@@ -1,0 +1,22 @@
+[logging]
+# Logging:
+# logfile = full path to log file
+# loglevel = info,warn,debug
+logfile = /var/log/thermlocalsensor.log
+loglevel = debug
+logrotation = midnight
+logcount = 3
+
+[main]
+
+# MySQL Credentials
+mysqlUser = <user>
+mysqlPass = <pass>
+mysqlDatabase = thermostat
+mysqlHost = localhost
+mysqlPort = 3306
+mysqlBackup = True
+mysqlBackupDir = /tmp
+
+moduleID = 1
+moduleName = Dining Room
