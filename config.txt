@@ -20,3 +20,12 @@ mysqlBackupDir = /tmp
 
 moduleID = 1
 moduleName = Dining Room
+
+# Weather setup. You can look up your NOAA Code at:
+# http://w1.weather.gov/xml/current_obs/seek.php?state=az&Find=Find
+# WeatherModuleID should be the moduleID field that you have labeled
+# as "outside".
+NOAAWeather = True
+NOAACode = KFTG
+WeatherModuleID = 0
+
